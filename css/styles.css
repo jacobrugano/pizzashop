@@ -93,6 +93,11 @@ section {
   color: #9C4646; /*color of h3, but not all h3s cz i gave it an ID*/
   font-size: 60px;  /*to set the size of heading*/
 }
+#paragraph1{
+  color:#867F7F;
+  font-size: 20px;
+  padding: 1rem 0;
+}
 html::-webkit-scrollbar{
   width: 22.4px;
 }
