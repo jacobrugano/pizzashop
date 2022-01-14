@@ -53,8 +53,14 @@ html{
   font-size: 1.8rem; /*to set the size of the words inside the navbar*/
   color: #95918D; /*to set the color of the words in the navbar*/
 }
+#alist.active, /*to make the hover effect color remain on the page opened*/
 #alist:hover{
   color:#8E1810;   /*to set the color of the hover effect when cursor goes on the names*/
+}
+#top-bar{
+  font-size: 30px;
+  color: #8E1810;
+  cursor: pointer; /*changing the icon to be apointer when on hover over the pizza icon*/
 }
 body{
   overflow-x: hidden;
