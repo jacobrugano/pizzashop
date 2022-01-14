@@ -1,6 +1,64 @@
+:root {            /*have opted to use :root pseudo-class as a selector to select the highest-level parent of the page */
+--yellow:#F7CA3E;
+}
 * {
   font-family: 'Roboto', sans-serif;  /*Gotten from https://fonts.google.com/*/
+  margin:0; padding: 0; /*Setting padding for the logo*/
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize; /*Make the texts capitalized*/
+  transition: all .2s linear;
+
+
 }
 h1, h3 {
   font-family: 'Oswald', sans-serif; /*Gotten from https://fonts.google.com/*/
+}
+*::selection {    /*to match the portion of the element that is selected by the users.*/
+  background: var(--yellow);
+  color: #fff;
+}
+#header{
+  position: fixed;
+  top:0; /*to set position from the top*/
+  left: 0; /*to set position from the left*/
+  z-index: 1000; /*to define how much the content will overlap*/
+  width: 100%; /*to make the page cover the whole page*/
+  background: white;
+  padding: 1.5rem 10%; /*To set the position inside the navbar*/
+  box-shadow: 0 .3rem 2rem rgba(0, 0, 0, 0.5); /*sets the shadow aroud the nav box*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;/*to seperate the logo and the content*/
+}
+html{
+  font-size: 63%;
+  overflow-x: hidden;
+}
+.logo #logo {
+  height: 80px;  /*to set the height of the logo and the wordings*/
+}
+#list {
+  display: flex; /*to align the items horizontally on the nav bar, otherwise they will drop downwards*/
+  align-items: center;
+  justify-content: center; /*to place the content at the center*/
+  list-style: none; /*since we are selecting a list, this is to remove the numberings*/
+}
+header .navbar ul li {
+  margin-left: 3rem;
+}
+
+body{
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+  width: 1.4rem;
+}
+html::-webkit-scrollbar-track{
+  background: #333;
+}
+html::-webkit-scrollbar-thumb{
+  background: var(--yellow);
 }
