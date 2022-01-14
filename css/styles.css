@@ -89,7 +89,10 @@ section {
 .home .content {
   flex: 1 1 40rem; /*to flex the size of the image*/
 }
-
+#heading3 {
+  color: #9C4646; /*color of h3, but not all h3s cz i gave it an ID*/
+  font-size: 60px;  /*to set the size of heading*/
+}
 html::-webkit-scrollbar{
   width: 22.4px;
 }
