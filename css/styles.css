@@ -94,9 +94,21 @@ section {
   font-size: 60px;  /*to set the size of heading*/
 }
 #paragraph1{
-  color:#867F7F;
-  font-size: 20px;
-  padding: 1rem 0;
+  color:#867F7F; /*to set the color of the landing page wordings*/
+  font-size: 15px;
+  padding: 10px 0;
+  font-weight: bold;
+}
+#button1 { /*code to translate the statement Lets Have Fun to a clickable button*/
+  padding: 11.2px 64px; /*to set the space between words button boundary inside the button. 11.2px for top and bottom and 64px for left and center*/
+  border-radius: 20px; /*to make the button round*/
+  font-size: 20px; /*To set the size of the button*/
+  margin-top: 15px;
+  background: none; /*to remove the greyish background behind the button*/
+  color: #731010;
+  cursor: pointer; /*to change the cursor to hand*/
+  border: 2px solid #731010; /*to stsyle the button, 2px to create the size of the lines marking the button,
+                              solid; to make the line continous, #731010; to set the color of the button boundary*/
 }
 html::-webkit-scrollbar{
   width: 22.4px;
