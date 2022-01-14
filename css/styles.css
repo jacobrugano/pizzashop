@@ -63,24 +63,6 @@ html{
   cursor: pointer; /*changing the icon to be apointer when on hover over the pizza icon*/
 display: none; /*to make the pizza icon disappear until on media query*/
 }
-/* #home::before,
-#home::after {
-position: absolute;
-background: yellow;
-border-radius: 20px;
-top: 5rem; right: -6rem;
-content: open-quote;
-transform: rotate(-45deg);
-height: 40rem;
-width: 70rem;
-z-index: -2;
-}
-#home::before{
-  top: -7rem;
-  background: yellow;
-  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.6);
-  z-index: -1;
-} */
 body{
   overflow-x: hidden;
 }
@@ -117,7 +99,9 @@ section {
   padding: 10px 0;
   font-weight: bold;
 }
-#button1 { /*code to translate the statement Lets Have Fun to a clickable button*/
+#button1,
+#button2
+{ /*code to translate the statement Lets Have Fun to a clickable button*/
   padding: 11.2px 64px; /*to set the space between words button boundary inside the button. 11.2px for top and bottom and 64px for left and center*/
   border-radius: 20px; /*to make the button round*/
   font-size: 20px; /*To set the size of the button*/
@@ -132,6 +116,9 @@ box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.6);
 #button1:hover{ /*to create the hover effect on the button*/
   background-color: #B38D8D; /*to create the hover color-effect on the button*/
 }
+#button2:hover {
+    background-color: #B38D8D; /*to create the hover color-effect on the button*/
+}
 html::-webkit-scrollbar{
   width: 22.4px;
 }
@@ -141,6 +128,27 @@ html::-webkit-scrollbar-track{
 html::-webkit-scrollbar-thumb{
   background: var(--yellow);
 }
+.aboutus{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about,
+.image1{
+flex: 1 1 40rem;
+height: 50rem;
+background: url(../public/pizza5.png), url(../public/pizza6.png) no-repeat;
+background-size: cover;
+background-position: center;
+background-blend-mode: screen;
+}
+.about,
+.aboutuscontent {
+  flex: 1 1 40rem;
+  padding: 2rem;
+}
+
 
 
 
