@@ -61,16 +61,105 @@ html{
   font-size: 30px;
   color: #8E1810;
   cursor: pointer; /*changing the icon to be apointer when on hover over the pizza icon*/
+display: none; /*to make the pizza icon disappear until on media query*/
 }
 body{
   overflow-x: hidden;
 }
+section {
+  min-height: 100vh; /*To create the height of the page. Got vh from w3 schools*/
+  padding: 1rem 10%; /*To create the space around the content, 1rem for space from bottom and 10% for from left*/
+  padding-top: 8.5rem;
+}
+.home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.home .image {
+  flex: 1 1 40rem;
+}
+.home .image img{
+  width: 100%;     /*To organize the contents in a row format....ie image next to the wording*/
+}
+.home .content {
+  flex: 1 1 40rem; /*to flex the size of the image*/
+}
+
 html::-webkit-scrollbar{
-  width: 1.4rem;
+  width: 22.4px;
 }
 html::-webkit-scrollbar-track{
   background: #333;
 }
 html::-webkit-scrollbar-thumb{
   background: var(--yellow);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*WHERE MEDIA QUIRIES STARTS*/
+@media (max-width:750px){
+  html{
+    font-size: 50%;
+  }
+  #top-bar{
+  display: block; /*to make the pizza icon disappear until on media query*/
+  }
+  .narbar{
+    position: fixed;
+    top: 15px; /*seting the distance from top on phone*/
+    left: 0; /*to set the distance of the icon from the left on phone*/
+    width: 100%;
+    transform: scaleY(0); /*to set the height of the box*/
+    transform-origin: top; /*to style the top div to remain at the top and not rotate*/
+    opacity: 0;
+    background: #7C4541; /*to set the color of the nav bar on phone*/
+    border-top: .3rem solid rgba(0, 0, 0, 0.2);
+  }
+#list{
+  flex-flow: column; /*to make the words inside the nav bar flow downwards on phone*/
+  padding-left: 36px; /*To set the distance of the wording inside the navbar showing how far to the right the wordings should be placed*/
+}
+#list2 {
+  margin: 15px;
+  width: 100%;
+}
+.narbar .nav-toggle {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+#alist{
+  display: block;
+  color: #FCF9F9; /*to set the color of the words when on phone to white*/
+  padding-left: 20px;
+  border-left: #fff 3px solid;  /*to set the fontsize, color and location of the icons behind the navbar wordings when on phone*/
+  font-size: 15px; /*to set the font size of the words on phone*/
+}
+.fa-times{
+  transform: rotate(180deg);
+}
+#alist:hover,
+alist.active {
+   /* color: #FAC0BC; */
+   background-color: #856B69; /*to set the color of the hover bar when on phone*/
+}
 }
