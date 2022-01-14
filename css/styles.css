@@ -47,11 +47,14 @@ html{
   list-style: none; /*since we are selecting a list, this is to remove the numberings*/
 }
 #list2 {
-  margin-left: 20px;
+  margin-left: 20px; /*to seperate the names inside the navbar*/
 }
  #alist{
-  font-size: 1.7rem;
-  color: #666;
+  font-size: 1.8rem; /*to set the size of the words inside the navbar*/
+  color: #95918D; /*to set the color of the words in the navbar*/
+}
+#alist:hover{
+  color:#8E1810;   /*to set the color of the hover effect when cursor goes on the names*/
 }
 body{
   overflow-x: hidden;
