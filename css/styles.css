@@ -63,6 +63,24 @@ html{
   cursor: pointer; /*changing the icon to be apointer when on hover over the pizza icon*/
 display: none; /*to make the pizza icon disappear until on media query*/
 }
+/* #home::before,
+#home::after {
+position: absolute;
+background: yellow;
+border-radius: 20px;
+top: 5rem; right: -6rem;
+content: open-quote;
+transform: rotate(-45deg);
+height: 40rem;
+width: 70rem;
+z-index: -2;
+}
+#home::before{
+  top: -7rem;
+  background: yellow;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.6);
+  z-index: -1;
+} */
 body{
   overflow-x: hidden;
 }
@@ -109,6 +127,10 @@ section {
   cursor: pointer; /*to change the cursor to hand*/
   border: 2px solid #731010; /*to stsyle the button, 2px to create the size of the lines marking the button,
                               solid; to make the line continous, #731010; to set the color of the button boundary*/
+box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.6);
+}
+#button1:hover{ /*to create the hover effect on the button*/
+  background-color: #B38D8D; /*to create the hover color-effect on the button*/
 }
 html::-webkit-scrollbar{
   width: 22.4px;
@@ -166,7 +188,15 @@ html::-webkit-scrollbar-thumb{
   transform: scaleY(1);
   opacity: 1;
 }
-
+.home{
+  text-align: center;
+}
+.content{
+  text-align: center;
+}
+#heading3{
+  font-size: 40px;
+}
 #alist{
   display: block;
   color: #FCF9F9; /*to set the color of the words when on phone to white*/
@@ -182,4 +212,11 @@ alist.active {
    /* color: #FAC0BC; */
    background-color: #856B69; /*to set the color of the hover bar when on phone*/
 }
+#content{
+  text-align: center;
+}
+#heading3 {
+  font-size: 30px;
+}
+
 }
