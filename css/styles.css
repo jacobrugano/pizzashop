@@ -46,10 +46,13 @@ html{
   justify-content: center; /*to place the content at the center*/
   list-style: none; /*since we are selecting a list, this is to remove the numberings*/
 }
-header .navbar ul li {
-  margin-left: 3rem;
+#list2 {
+  margin-left: 20px;
 }
-
+ #alist{
+  font-size: 1.7rem;
+  color: #666;
+}
 body{
   overflow-x: hidden;
 }
