@@ -100,7 +100,8 @@ section {
   font-weight: bold;
 }
 #button1,
-#button2
+#button2,
+#button3
 { /*code to translate the statement Lets Have Fun to a clickable button*/
   padding: 11.2px 64px; /*to set the space between words button boundary inside the button. 11.2px for top and bottom and 64px for left and center*/
   border-radius: 20px; /*to make the button round*/
@@ -117,6 +118,9 @@ box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.6);
   background-color: #B38D8D; /*to create the hover color-effect on the button*/
 }
 #button2:hover {
+    background-color: #B38D8D; /*to create the hover color-effect on the button*/
+}
+#button3:hover {
     background-color: #B38D8D; /*to create the hover color-effect on the button*/
 }
 html::-webkit-scrollbar{
