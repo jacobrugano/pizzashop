@@ -136,20 +136,29 @@ html::-webkit-scrollbar-thumb{
 }
 .about,
 .image1{
-flex: 1 1 40rem;
-height: 50rem;
-background: url(../public/pizza5.png), url(../public/pizza6.png) no-repeat;
-background-size: cover;
+flex: 1 1 400px; /*to size the image in about us section*/
+height: 500px; /*to set the height of the image in about us section*/
+background: url(../public/pizza5.png), url(../public/pizza6.png) no-repeat; /*to place the images on top of each other*/
+background-size: cover; /*to make the image cover the entire area of the box as one image*/
 background-position: center;
-background-blend-mode: screen;
+background-blend-mode: overlay; /*from w3 to define the blending mode of the background layer image*/
+padding-left: 20px;
 }
 .about,
 .aboutuscontent {
-  flex: 1 1 40rem;
-  padding: 2rem;
+  flex: 1 1 30rem;/*to stole the contect inside the ABOUT US div*/
+  padding: 20px; /*to set the size of the space behind between words and image in the ABOUT US div*/
 }
-
-
+.aboutus .aboutuscontent h3 {
+  font-size: 40px; /*settings for heading in ABOUT US*/
+  color: #971010; /*color for heading in ABOUT US*/
+}
+.aboutus .aboutuscontent p {
+  font-size: 13px;
+  padding: 18px 0;
+  color: #000000;
+  font-family: font-family: 'Oswald', sans-serif;
+}
 
 
 
