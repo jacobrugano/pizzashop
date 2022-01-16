@@ -121,6 +121,7 @@ section {
   transform: scale(0.7); /*to make the button hover towards the screen as you put the cursor on top
                           Putting the scale between 0 and 0.9 makes the button hover inward while between 1.1 and 2
                           makes the button hover frontwards towards the screen*/
+  box-shadow: 0 30px 30px 30px rgba(0, 0, 0, 0.4); /*to create a shadow as you hover above the icon as also it 'fades out'*/
 }
 #button2:hover {
     background-color: #B38D8D; /*to create the hover color-effect on the button*/
@@ -192,6 +193,7 @@ background-attachment: fixed; /*To make the background image not to move as user
 
 }
 .box:hover {
+  box-shadow: 0 30px 30px 30px rgba(0, 0, 0, 0.4); /*to create a shadow as you hover*/
   transform: scale(0.7); /*to make the boxes hover towards the screen as you put the cursor on top*/
 }
 .heading5,
