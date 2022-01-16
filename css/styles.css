@@ -140,19 +140,47 @@ background-size: cover; /*To fix the ENTIRE image at the center*/
 background-position: center; /*To fix the ENTIRE image at the center*/
 background-attachment: fixed; /*To make the background image not to move as users scroll downwards*/
 }
- .popular {
-  display: flex;
+.box-container {
+  display: flex; /*to make the boxes be arranged in two by two  in one box*/
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-.box {
-  background: #543D3D;
-  width: 35rem;
-  padding: 2rem;
-  margin: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
+ .box {
+  background: #E5E2E2; /*to set the color insode the box*/
+  width: 300px; /*to set the size(width) of the boxes and the order.*/
+  height: 400px; /*to set the size(length) of the boxes and the order.*/
+  padding: 16px; /*To set the distance between the image and the border inside the boxes*/
+  margin: 30px; /*to set the margins*/
+  border-radius: 30px; /*to make the boxes look circular*/
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.9); /*to set the shadow at the edges of the boxes*/
+  text-align: center; /*to set the words at the center of the box*/
+}
+
+#img2 {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+}
+.h3{
+  font-size: 30px;
+  color: #060101;
+}
+.smileyface {
+  color: #A51F1F; /*to set the color of the smileyicons*/
+  font-size: 25px; /*to set the size of */
+  padding: 5px 2px; /*5px to set the space around the stars and 2px to set the distance between the stars*/
+}
+.price {
+  font-size: 15px;
+  color: #000000;
+  font-weight: bolder;
+  padding: 5px; /*5px to set the space around the price from top and down*/
+
+}
+.popular .box-container .box:hover {
+  transform: scale(1.3);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 .heading5,
 .heading6{
