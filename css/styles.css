@@ -101,7 +101,8 @@ section {
 }
 #button1,
 #button2,
-#button3
+#button3,
+#button4
 { /*code to translate the statement Lets Have Fun to a clickable button*/
   padding: 11.2px 64px; /*to set the space between words button boundary inside the button. 11.2px for top and bottom and 64px for left and center*/
   border-radius: 20px; /*to make the button round*/
@@ -112,7 +113,7 @@ section {
   cursor: pointer; /*to change the cursor to hand*/
   border: 2px solid #731010; /*to stsyle the button, 2px to create the size of the lines marking the button,
                               solid; to make the line continous, #731010; to set the color of the button boundary*/
-box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.6);
 }
 #button1:hover{ /*to create the hover effect on the button*/
   background-color: #B38D8D; /*to create the hover color-effect on the button*/
@@ -122,6 +123,60 @@ box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.6);
 }
 #button3:hover {
     background-color: #B38D8D; /*to create the hover color-effect on the button*/
+}
+#button3{
+  margin: 10px; /*to set the margin size around the icons*/
+}
+#button4 {
+  margin: 5px; /*to set the margin size around the icons*/
+}
+#button4:hover {
+    background-color: #B38D8D; /*to create the hover color-effect on the button*/
+}
+.popular {
+background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7)), url(../public/pizza8.jpeg) no-repeat;
+                /*To fix the image as background*/
+background-size: cover; /*To fix the ENTIRE image at the center*/
+background-position: center; /*To fix the ENTIRE image at the center*/
+background-attachment: fixed; /*To make the background image not to move as users scroll downwards*/
+}
+ .popular {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.box {
+  background: #543D3D;
+  width: 35rem;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
+}
+.heading5,
+.heading6{
+  text-align: center; /*To plave the eader at the center*/
+  color: black;
+  padding: 9 .5rem; /*remove*/
+  font-size: 44px; /*setting the size of the header*/
+}
+#menuspan {
+  color: #971010; /*Styling the name Foods seperately/color*/
+}
+#popular {
+  color: #971010; /*Styling the name Foods seperately/color*/
+}
+#menu
+#list {
+  border-top: dashed 3px rgba(0, 0, 0, 0.5); /*to put and style a line on top of the icons...used 3px to set its width(upana),                                              dashed to make it a broken line and rgba to set its relative color*/
+  border-bottom: dashed 3px rgba(0, 0, 0, 0.5); /*to put and style a line at the bottom of the icons...used 3px to set its width(upana),                                            dashed to make it a broken line and rgba to set its relative color*/
+  padding-bottom: 10px; /*To set the distance between between the dashed line and the icons from bottom*/
+  padding-top: 1px; /*To set the distance between between the dashed line and the icons from top*/
+  align-items: center;
+  justify-content: center; /*to place the icons at the center*/
+  display: flex;
+  list-style: none; /*to remove the numbering on the icons*/
 }
 html::-webkit-scrollbar{
   width: 22.4px;
@@ -150,7 +205,7 @@ padding-left: 20px;
 }
 .about,
 .aboutuscontent {
-  flex: 1 1 30rem;/*to stole the contect inside the ABOUT US div*/
+  flex: 1 1 30rem;/*to store the contect inside the ABOUT US div*/
   padding: 20px; /*to set the size of the space behind between words and image in the ABOUT US div*/
 }
 .aboutus .aboutuscontent h3 {
@@ -163,6 +218,7 @@ padding-left: 20px;
   color: #000000;
   font-family: font-family: 'Oswald', sans-serif;
 }
+
 
 
 
