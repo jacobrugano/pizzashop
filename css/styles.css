@@ -114,15 +114,25 @@ section {
   border: 2px solid #731010; /*to stsyle the button, 2px to create the size of the lines marking the button,
                               solid; to make the line continous, #731010; to set the color of the button boundary*/
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.6);
+
 }
 #button1:hover{ /*to create the hover effect on the button*/
   background-color: #B38D8D; /*to create the hover color-effect on the button*/
+  transform: scale(0.7); /*to make the button hover towards the screen as you put the cursor on top
+                          Putting the scale between 0 and 0.9 makes the button hover inward while between 1.1 and 2
+                          makes the button hover frontwards towards the screen*/
 }
 #button2:hover {
     background-color: #B38D8D; /*to create the hover color-effect on the button*/
+    transform: scale(0.7); /*to make the button hover towards the screen as you put the cursor on top
+                            Putting the scale between 0 and 0.9 makes the button hover inward while between 1.1 and 2
+                            makes the button hover frontwards towards the screen*/
 }
 #button3:hover {
     background-color: #B38D8D; /*to create the hover color-effect on the button*/
+    transform: scale(0.7); /*to make the button hover towards the screen as you put the cursor on top
+                            Putting the scale between 0 and 0.9 makes the button hover inward while between 1.1 and 2
+                            makes the button hover frontwards towards the screen*/
 }
 #button3{
   margin: 10px; /*to set the margin size around the icons*/
@@ -132,6 +142,9 @@ section {
 }
 #button4:hover {
     background-color: #B38D8D; /*to create the hover color-effect on the button*/
+    transform: scale(0.7); /*to make the button hover towards the screen as you put the cursor on top
+                            Putting the scale between 0 and 0.9 makes the button hover inward while between 1.1 and 2
+                            makes the button hover frontwards towards the screen*/
 }
 .popular {
 background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7)), url(../public/pizza8.jpeg) no-repeat;
@@ -178,9 +191,8 @@ background-attachment: fixed; /*To make the background image not to move as user
   padding: 5px; /*5px to set the space around the price from top and down*/
 
 }
-.popular .box-container .box:hover {
-  transform: scale(1.3);
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+.box:hover {
+  transform: scale(0.7); /*to make the boxes hover towards the screen as you put the cursor on top*/
 }
 .heading5,
 .heading6{
