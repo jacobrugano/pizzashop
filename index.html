@@ -42,7 +42,7 @@
    <h3 id="heading3">Good pizza is always generous</h3>
    <p id="paragraph1">Produced in-house daily always tastes better. The Twisty Bread, the signature Wingz and the
      delicious Double Meal are additional value-for-money options to make you feel at home at Nonnie Pizza Inn.</p>
-   <a href="#"><button id="button1" class="btn">Lets have fun!</button></a>
+   <a href="#"><button id="button1" class="btn">PLace an Order</button></a>
  </div>
  <div class="image" data-aos="fade-up">
    <!-- data-aos="fade-up" To make the content fade in as you load/scroll.....W3SCHOOLS CSS3 -->
@@ -73,26 +73,38 @@
 
 <!-- Section for menu starts............. -->
 <section id="menu" class="menu1" >
-    <h1 class="heading5">Our Favourite <span id="menuspan">Foods</span></h1>
+    <h1 class="heading5">Size of the <span id="menuspan">Pizza I want</span></h1>
                                         <!-- Created the span and span id to be able to style the name FOODS seperately.  -->
     <ul id="list"  data-aos="fade-left">
-        <li class="button3" id="button3" data-src="public/pizza7.jpg">Breakfast</li>
-        <li class="button3" id="button3"  data-src="public/pizza7.jpg">Lunch</li>
-        <li class="button3" id="button3" data-src="public/pizza7.jpg">Dinner</li>
-        <li class="button3"  id="button3" data-src="public/pizza7.jpg">Dessert</li>
+        <li class="button3" id="button3" data-src="public/pizza7.jpg">Small</li>
+        <li class="button3" id="button3"  data-src="public/pizza7.jpg">Medium</li>
+        <li class="button3" id="button3" data-src="public/pizza7.jpg">Large</li>
+        <!-- <li class="button3"  id="button3" data-src="public/pizza7.jpg">Dessert</li> -->
+    </ul>
+    <h1 class="heading5">The kind of <span id="menuspan">Crust I want</span></h1>
+                                        <!-- Created the span and span id to be able to style the name FOODS seperately.  -->
+    <ul id="list"  data-aos="fade-left">
+        <li class="button3" id="button3" data-src="public/pizza7.jpg">Crispy</li>
+        <li class="button3" id="button3"  data-src="public/pizza7.jpg">Stuffed</li>
+        <li class="button3" id="button3" data-src="public/pizza7.jpg">Gluten-free</li>
+        <li class="button3"  id="button3" data-src="public/pizza7.jpg">Toppings</li>
     </ul>
     <!-- Order section starts.... -->
     <div class="placeorder" id="order">
-      <h1 id="heading3">Place your<span class="orderspan"> Order</span></h1>
+      <h1 id="heading33">Place your<span class="orderspan"> Order</span></h1>
       <div class="row" id="orderrow"  data-aos="fade-right">
         <!-- data-aos="fade-right" To make the content fade in as you load/scroll.....W3SCHOOLS CSS3 -->
+        <div class="">
+          <h1 id="orderheader">Do you want your order delivered? If yes, enter your details below</h1>
+        <label><input type="radio" name="optiom" checked><span id="optionlabel">YES (Enter details below)</span></label></br>
+        <label><input type="radio" name="optiom" checked><span id="optionlabel" >NO</span></label>
+        </div>
         <form class="orderf" method="">
           <input type="text" name="" class="boxorder" placeholder="Enter your name....">
-          <input type="text" name="" class="boxorder" placeholder="Enter your name....">
-          <input type="text" name="" class="boxorder" placeholder="Enter your name....">
-          <input type="text" name="" class="boxorder" placeholder="Enter your name....">
+          <input type="text" name="" class="boxorder" placeholder="Where to deliver your order...">
+          <input type="number" name="" class="boxorder" placeholder="Number of pizzas you want...">
           <textarea name="" rows="9" cols="30" class="address" placeholder="Enter your address here...."></textarea>
-          <input type="submit" id="button3" value="order now">
+          <input type="submit" id="button3" value="Checkout">
 
         </form>
       </div>

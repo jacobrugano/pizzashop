@@ -184,6 +184,21 @@ background-attachment: fixed; /*To make the background image not to move as user
   font-size: 30px;
   color: #060101;
 }
+#heading33{
+  font-size: 40px;
+  color: #560F0F;
+  padding-left: 130px;
+}
+#orderheader{
+  font-size: 20px;
+  padding-left: 10px;
+}
+#optionlabel{
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 10px;
+  color: #BC0707;
+}
 .smileyface {
   color: #A51F1F; /*to set the color of the smileyicons*/
   font-size: 25px; /*to set the size of */
@@ -205,7 +220,7 @@ background-attachment: fixed; /*To make the background image not to move as user
   text-align: center; /*To plave the eader at the center*/
   color: black;
   padding: 9 .5rem; /*remove*/
-  font-size: 44px; /*setting the size of the header*/
+  font-size: 30px; /*setting the size of the header*/
 }
 .placeorder {
   background-position: center;
