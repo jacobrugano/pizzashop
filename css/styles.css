@@ -128,12 +128,15 @@ section {
     transform: scale(0.7); /*to make the button hover towards the screen as you put the cursor on top
                             Putting the scale between 0 and 0.9 makes the button hover inward while between 1.1 and 2
                             makes the button hover frontwards towards the screen*/
+    box-shadow: 0 30px 30px 30px rgba(0, 0, 0, 0.4); /*to create a shadow as you hover above the icon as also it 'fades out'*/
 }
 #button3:hover {
     background-color: #B38D8D; /*to create the hover color-effect on the button*/
     transform: scale(0.7); /*to make the button hover towards the screen as you put the cursor on top
                             Putting the scale between 0 and 0.9 makes the button hover inward while between 1.1 and 2
                             makes the button hover frontwards towards the screen*/
+    box-shadow: 0 30px 30px 30px rgba(0, 0, 0, 0.4); /*to create a shadow as you hover above the icon as also it 'fades out'*/
+
 }
 #button3{
   margin: 10px; /*to set the margin size around the icons*/
@@ -146,6 +149,7 @@ section {
     transform: scale(0.7); /*to make the button hover towards the screen as you put the cursor on top
                             Putting the scale between 0 and 0.9 makes the button hover inward while between 1.1 and 2
                             makes the button hover frontwards towards the screen*/
+    box-shadow: 0 30px 30px 30px rgba(0, 0, 0, 0.4); /*to create a shadow as you hover above the icon as also it 'fades out'*/
 }
 .popular {
 background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7)), url(../public/pizza8.jpeg) no-repeat;
@@ -202,6 +206,39 @@ background-attachment: fixed; /*To make the background image not to move as user
   color: black;
   padding: 9 .5rem; /*remove*/
   font-size: 44px; /*setting the size of the header*/
+}
+.placeorder {
+  background-position: center;
+}
+#orderrow {
+  margin: 5px; /*margin from top*/
+}
+
+.boxorder{
+  padding: 5px; /*to style the width of the typing box */
+  margin: 8px; /*to set the distance between the boxes*/
+  font-size: 15px; /*to set the font size inside the order boxes*/
+  color: #FEFCFC; /*to set the color of the typed info*/
+  text-transform: none;
+  background: #5D5555; /*to set the color of the boxes*/
+  width: 50%; /*to set the width of the boxes*/
+}
+.address{
+  height: 90px;
+  padding: 5px; /*to style the width of the address box */
+  margin: 8px; /*to set the distance between the  address box*/
+  font-size: 15px; /*to set the font size inside the  address boxes*/
+  color: #FEFCFC; /*to set the color of the typed info*/
+  text-transform: none;
+  background: #5D5555; /*to set the color of the  address box*/
+  width: 50%; /*to set the width of the  address box*/
+}
+.placeorder {
+background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7)), url(../public/pizza9.jpeg) no-repeat;
+                /*To fix the image as background*/
+background-size: cover; /*To fix the ENTIRE image at the center*/
+background-position: center; /*To fix the ENTIRE image at the center*/
+background-attachment: fixed; /*To make the background image not to move as users scroll downwards*/
 }
 #menuspan {
   color: #971010; /*Styling the name Foods seperately/color*/
@@ -337,5 +374,8 @@ alist.active {
 #heading3 {
   font-size: 30px;
 }
-
+section{
+  padding-top: 100px;
+  padding: 16px 6%;
+}
 }

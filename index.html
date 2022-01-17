@@ -12,6 +12,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+<!-- Gotten this link from cdnjs.com then typed aos.....w3 schools css3 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   </head>
   <body>
     <!-- Demacates the starts of the start of the header section.  -->
@@ -34,13 +37,15 @@
 
 <!-- Demacate Landing page starts here -->
 <section id="home" class="home">
- <div class="content">
+ <div class="content" data-aos="fade-right">
+<!-- data-aos="fade-right" To make the content fade in as you load/scroll.....W3SCHOOLS CSS3 -->
    <h3 id="heading3">Good pizza is always generous</h3>
    <p id="paragraph1">Produced in-house daily always tastes better. The Twisty Bread, the signature Wingz and the
      delicious Double Meal are additional value-for-money options to make you feel at home at Nonnie Pizza Inn.</p>
    <a href="#"><button id="button1" class="btn">Lets have fun!</button></a>
  </div>
- <div class="image">
+ <div class="image" data-aos="fade-up">
+   <!-- data-aos="fade-up" To make the content fade in as you load/scroll.....W3SCHOOLS CSS3 -->
     <img src="public/pizza3.jpg" alt="">
  </div>
 </section>
@@ -48,8 +53,10 @@
 
 <!-- Start of About us section -->
 <section class="aboutus" id="about">
-  <div class="image1"></div>
-    <div class="aboutuscontent">
+  <div class="image1"  data-aos="fade-right"></div>
+  <!-- data-aos="fade-right" To make the content fade in as you load/scroll.....W3SCHOOLS CSS3 -->
+    <div class="aboutuscontent"  data-aos="fade-left">
+      <!-- data-aos="fade-left" To make the content fade in as you load/scroll.....W3SCHOOLS CSS3 -->
         <h3 id="aboutus1">This is who we are!!</h3>
         <p>Nonnie Pizza Inn is the best tasting flame grilled chicken in the world, with massive flavour right through.
           Our traditional marinade is made from all natural ingredients infused with select herbs and spices.
@@ -68,50 +75,29 @@
 <section id="menu" class="menu1" >
     <h1 class="heading5">Our Favourite <span id="menuspan">Foods</span></h1>
                                         <!-- Created the span and span id to be able to style the name FOODS seperately.  -->
-    <ul id="list">
+    <ul id="list"  data-aos="fade-left">
         <li class="button3" id="button3" data-src="public/pizza7.jpg">Breakfast</li>
         <li class="button3" id="button3"  data-src="public/pizza7.jpg">Lunch</li>
         <li class="button3" id="button3" data-src="public/pizza7.jpg">Dinner</li>
         <li class="button3"  id="button3" data-src="public/pizza7.jpg">Dessert</li>
     </ul>
-<div class="">
+    <!-- Order section starts.... -->
+    <div class="placeorder" id="order">
+      <h1 id="heading3">Place your<span class="orderspan"> Order</span></h1>
+      <div class="row" id="orderrow"  data-aos="fade-right">
+        <!-- data-aos="fade-right" To make the content fade in as you load/scroll.....W3SCHOOLS CSS3 -->
+        <form class="orderf" method="">
+          <input type="text" name="" class="boxorder" placeholder="Enter your name....">
+          <input type="text" name="" class="boxorder" placeholder="Enter your name....">
+          <input type="text" name="" class="boxorder" placeholder="Enter your name....">
+          <input type="text" name="" class="boxorder" placeholder="Enter your name....">
+          <textarea name="" rows="9" cols="30" class="address" placeholder="Enter your address here...."></textarea>
+          <input type="submit" id="button3" value="order now">
 
-</div>
-    <!-- <div class="row">
-        <div class="image">
-            <img src="public/menu2.jpg" id= "menu-img" alt="">
-        </div>
-    </div>
-    <div class="content">
-        <div class="info">
-          <h3> <span>01.</span>Choose your pizza like a king holding a king's hand</h3>
-          <p>Walk from the Lamu beach barefoot,find Chef Steve creating an outstanding special
-             pizza along with our amazing daily Beach Menu which includes chowders, "street tacos",
-             sandwiches, huge burgers, great wings, fresh local seafood and the coldest beer on the
-             Island (huge selection of craft, imported and domestic beers) ALL FOR YOU!!</p>
-        </div>
-        <div class="info">
-          <h3> <span>02.</span>Choose your pizza like a king holding a king's hand</h3>
-          <p>Walk from the Lamu beach barefoot,find Chef Steve creating an outstanding special
-             pizza along with our amazing daily Beach Menu which includes chowders, "street tacos",
-             sandwiches, huge burgers, great wings, fresh local seafood and the coldest beer on the
-             Island (huge selection of craft, imported and domestic beers) ALL FOR YOU!!</p>
-        </div>
-        <div class="info">
-          <h3> <span>03.</span>Choose your pizza like a king holding a king's hand</h3>
-          <p>Walk from the Lamu beach barefoot,find Chef Steve creating an outstanding special
-             pizza along with our amazing daily Beach Menu which includes chowders, "street tacos",
-             sandwiches, huge burgers, great wings, fresh local seafood and the coldest beer on the
-             Island (huge selection of craft, imported and domestic beers) ALL FOR YOU!!</p>
-        </div>
-        <div class="info">
-          <h3> <span>04.</span>Choose your pizza like a king holding a king's hand</h3>
-          <p>Walk from the Lamu beach barefoot,find Chef Steve creating an outstanding special
-             pizza along with our amazing daily Beach Menu which includes chowders, "street tacos",
-             sandwiches, huge burgers, great wings, fresh local seafood and the coldest beer on the
-             Island (huge selection of craft, imported and domestic beers) ALL FOR YOU!!</p>
-        </div>
-    </div> -->
+        </form>
+      </div>
+
+    <!-- Order section ends.... -->
 </section>
 <!-- Section for menu ends.......... -->
 
@@ -183,13 +169,57 @@
 </section>
 <!-- Today's special offers starts.... -->
 
-
-
+<!-- CSS3 Animate On Scroll link.. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
+</script>
+<!-- CSS3 Animate On Scroll link.. -->
 <!-- jquery link -->
+
+<!-- Gotten this link from cdnjs.com then typed aos.....w3 schools css3 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <!-- // Linking to my local js file -->
 <script src="js/scripts.js"></script>
-
+<script>
+AOS.init ({
+  delay:100, duration: 500
+})
+</script>
   </body>
 
 </html>
+
+    <!-- <div class="row">
+        <div class="image">
+            <img src="public/menu2.jpg" id= "menu-img" alt="">
+        </div>
+    </div>
+    <div class="content">
+        <div class="info">
+          <h3> <span>01.</span>Choose your pizza like a king holding a king's hand</h3>
+          <p>Walk from the Lamu beach barefoot,find Chef Steve creating an outstanding special
+             pizza along with our amazing daily Beach Menu which includes chowders, "street tacos",
+             sandwiches, huge burgers, great wings, fresh local seafood and the coldest beer on the
+             Island (huge selection of craft, imported and domestic beers) ALL FOR YOU!!</p>
+        </div>
+        <div class="info">
+          <h3> <span>02.</span>Choose your pizza like a king holding a king's hand</h3>
+          <p>Walk from the Lamu beach barefoot,find Chef Steve creating an outstanding special
+             pizza along with our amazing daily Beach Menu which includes chowders, "street tacos",
+             sandwiches, huge burgers, great wings, fresh local seafood and the coldest beer on the
+             Island (huge selection of craft, imported and domestic beers) ALL FOR YOU!!</p>
+        </div>
+        <div class="info">
+          <h3> <span>03.</span>Choose your pizza like a king holding a king's hand</h3>
+          <p>Walk from the Lamu beach barefoot,find Chef Steve creating an outstanding special
+             pizza along with our amazing daily Beach Menu which includes chowders, "street tacos",
+             sandwiches, huge burgers, great wings, fresh local seafood and the coldest beer on the
+             Island (huge selection of craft, imported and domestic beers) ALL FOR YOU!!</p>
+        </div>
+        <div class="info">
+          <h3> <span>04.</span>Choose your pizza like a king holding a king's hand</h3>
+          <p>Walk from the Lamu beach barefoot,find Chef Steve creating an outstanding special
+             pizza along with our amazing daily Beach Menu which includes chowders, "street tacos",
+             sandwiches, huge burgers, great wings, fresh local seafood and the coldest beer on the
+             Island (huge selection of craft, imported and domestic beers) ALL FOR YOU!!</p>
+        </div>
+    </div> -->
