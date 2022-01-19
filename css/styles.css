@@ -190,14 +190,34 @@ background-attachment: fixed; /*To make the background image not to move as user
   padding-left: 130px;
 }
 #orderheader{
-  font-size: 20px;
+  font-size: 15px;
   padding-left: 10px;
+  font-weight: bold;
 }
 #optionlabel{
   font-size: 15px;
   font-weight: bold;
   padding-left: 10px;
   color: #BC0707;
+  
+}
+#order {
+  /* padding: 5px; */
+  padding-top: 10px;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+}
+.pizzasize,
+.Crust,
+.radiobtn,
+.toppings
+{
+  font-size: 15px;
+  padding-left: 10px;
+  margin: 7px;
+  background-color: #C88B8B;
 }
 .smileyface {
   color: #A51F1F; /*to set the color of the smileyicons*/
@@ -225,9 +245,6 @@ background-attachment: fixed; /*To make the background image not to move as user
 .placeorder {
   background-position: center;
 }
-#orderrow {
-  margin: 5px; /*margin from top*/
-}
 
 .boxorder{
   padding: 5px; /*to style the width of the typing box */
@@ -235,8 +252,8 @@ background-attachment: fixed; /*To make the background image not to move as user
   font-size: 15px; /*to set the font size inside the order boxes*/
   color: #FEFCFC; /*to set the color of the typed info*/
   text-transform: none;
-  background: #5D5555; /*to set the color of the boxes*/
   width: 50%; /*to set the width of the boxes*/
+  background: rgb(0, 0, 0, 0.4) /* Purple TRANSPARENT background with 40% opacity */
 }
 .address{
   height: 90px;
@@ -245,8 +262,11 @@ background-attachment: fixed; /*To make the background image not to move as user
   font-size: 15px; /*to set the font size inside the  address boxes*/
   color: #FEFCFC; /*to set the color of the typed info*/
   text-transform: none;
-  background: #5D5555; /*to set the color of the  address box*/
+  background: rgb(0, 0, 0, 0.4); /* black background with 40% opacity */
   width: 50%; /*to set the width of the  address box*/
+}
+::placeholder { /* Code to change the color of the placeholders to white */
+  color: #FCFBFB;
 }
 .placeorder {
 background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7)), url(../public/pizza9.jpeg) no-repeat;

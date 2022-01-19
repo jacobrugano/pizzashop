@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <!-- Linking to my css file -->
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/bootstrap.css">
 <!-- Google fonts linking -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,7 +43,9 @@
    <h3 id="heading3">Good pizza is always generous</h3>
    <p id="paragraph1">Produced in-house daily always tastes better. The Twisty Bread, the signature Wingz and the
      delicious Double Meal are additional value-for-money options to make you feel at home at Nonnie Pizza Inn.</p>
-   <a href="#"><button id="button1" class="btn">PLace an Order</button></a>
+   <a href="#order"><button id="button1" class="btn">Place an Order</button></a>
+   <!-- REMEMBER: The  href="#order" here is to connect the button to the section it should go to once clicked. So you give it
+   a hyper-reference href="" then the ID of the section it should refer to. -->
  </div>
  <div class="image" data-aos="fade-up">
    <!-- data-aos="fade-up" To make the content fade in as you load/scroll.....W3SCHOOLS CSS3 -->
@@ -66,45 +69,66 @@
           Having worked seven days a week in restaurants open 24 hours, Truett saw the importance of closing on Sundays so
           that he and his employees could set aside one day to rest and worship if they choose — a practice we uphold today.
         </p>
-        <a href="#"><button id="button2" class="btn">Learn more</a>
+        <a href="#order"><button id="button2" class="btn">Order a pizza today!</a>
+          <!-- REMEMBER: The  href="#order" here is to connect the button to the section it should go to once clicked. So you give it
+          a hyper-reference href="" then the ID of the section it should refer to. -->
     </div>
 </section>
 <!-- End of About us section -->
 
 <!-- Section for menu starts............. -->
 <section id="menu" class="menu1" >
-    <h1 class="heading5">Size of the <span id="menuspan">Pizza I want</span></h1>
+    <!-- <h1 class="heading5">Size of the <span id="menuspan">Pizza I want</span></h1> -->
                                         <!-- Created the span and span id to be able to style the name FOODS seperately.  -->
-    <ul id="list"  data-aos="fade-left">
+    <!-- <ul id="list"  data-aos="fade-left">
         <li class="button3" id="button3" data-src="public/pizza7.jpg">Small</li>
         <li class="button3" id="button3"  data-src="public/pizza7.jpg">Medium</li>
-        <li class="button3" id="button3" data-src="public/pizza7.jpg">Large</li>
+        <li class="button3" id="button3" data-src="public/pizza7.jpg">Large</li> -->
         <!-- <li class="button3"  id="button3" data-src="public/pizza7.jpg">Dessert</li> -->
-    </ul>
-    <h1 class="heading5">The kind of <span id="menuspan">Crust I want</span></h1>
+    <!-- </ul>
+    <h1 class="heading5">The kind of <span id="menuspan">Crust I want</span></h1> -->
                                         <!-- Created the span and span id to be able to style the name FOODS seperately.  -->
-    <ul id="list"  data-aos="fade-left">
+    <!-- <ul id="list"  data-aos="fade-left">
         <li class="button3" id="button3" data-src="public/pizza7.jpg">Crispy</li>
         <li class="button3" id="button3"  data-src="public/pizza7.jpg">Stuffed</li>
         <li class="button3" id="button3" data-src="public/pizza7.jpg">Gluten-free</li>
         <li class="button3"  id="button3" data-src="public/pizza7.jpg">Toppings</li>
-    </ul>
+    </ul> -->
     <!-- Order section starts.... -->
     <div class="placeorder" id="order">
       <h1 id="heading33">Place your<span class="orderspan"> Order</span></h1>
       <div class="row" id="orderrow"  data-aos="fade-right">
         <!-- data-aos="fade-right" To make the content fade in as you load/scroll.....W3SCHOOLS CSS3 -->
         <div class="">
+          <label for="pizzasize" id="orderheader">Select size of Pizza to order</label>
+            <select class="pizzasize" name="size" id="size">
+                <option  label="small - ksh 350" id="optionlabel" value="350" class="small">Small</option>
+                <option label="medium - ksh 550" id="optionlabel" value="550" class="medium">Medium</option>
+                <option label="Large - ksh 1350" id="optionlabel"  value="1350" class="large">Large</option>
+            </select> </br>
+            <label for="Crust" id="orderheader">Select the Crust you want</label>
+              <select class="Crust" name="Crust" id="crust">
+                  <option  id="optionlabel" label="crispy - ksh 550"  value="150" class="crispy">Crispy</option>
+                  <option  id="optionlabel"  label="stuffed - ksh 550" value="250" class="stuffed">Stuffed</option>
+                  <option  id="optionlabel"  label="gluten - ksh 550" value="350" class="gluten">Gluten-free</option>
+              </select> </br>
+                <label for="toppings" id="orderheader">Select the Toppings you want</label>
+                  <select class="toppings" name="toppings" id="toppings">
+                      <option  id="optionlabel" value="350"  class="cheese">cheese</option>
+                      <option  id="optionlabel" value="250" class="broccoli ">broccoli</option>
+                      <option  id="optionlabel" value="350" class="mushrooms">mushrooms</option>
+                  </select> </br>
           <h1 id="orderheader">Do you want your order delivered? If yes, enter your details below</h1>
-        <label><input type="radio" name="optiom" checked><span id="optionlabel">YES (Enter details below)</span></label></br>
-        <label><input type="radio" name="optiom" checked><span id="optionlabel" >NO</span></label>
+        <label><input type="radio" class="radiobtn" name="optiom" checked><span id="optionlabel">YES (Enter details below)</span></label></br>
+        <label><input type="radio" class="radiobtn" name="optiom" checked><span id="optionlabel" >NO</span></label>
         </div>
         <form class="orderf" method="">
-          <input type="text" name="" class="boxorder" placeholder="Enter your name....">
-          <input type="text" name="" class="boxorder" placeholder="Where to deliver your order...">
-          <input type="number" name="" class="boxorder" placeholder="Number of pizzas you want...">
+          <input type="text" name="" class="boxorder" id="name" placeholder="Enter your name....">
+          <input type="text" name="" class="boxorder" id="location" placeholder="Where to deliver your order...">
+          <input type="number" name="" class="boxorder" placeholder="Number of pizzas you want..." id="quantity">
           <textarea name="" rows="9" cols="30" class="address" placeholder="Enter your address here...."></textarea>
-          <input type="submit" id="button3" value="Checkout">
+          <input onclick="getTotalAmount()" type="submit" id="button3" value="Checkout">
+
 
         </form>
       </div>
@@ -130,7 +154,7 @@
         <div class="price">
             <p>KSHs 300</p>
         </div>
-        <a href="#"><button id="button4" class="btn">add to cart</a>
+        <a href="#order"><button id="button4" class="btn">add to cart</a>
     </div>
     <div class="box">
       <img src="public/pizza99.jpeg"  id="img2" alt="">
@@ -145,7 +169,7 @@
         <div class="price">
             <p>KSHs 300</p>
         </div>
-        <a href="#"><button id="button4" class="btn">add to cart</a>
+        <a href="#order"><button id="button4" class="btn">add to cart</a>
     </div>
     <div class="box">
       <img src="public/pizza99.jpeg"  id="img2" alt="">
@@ -160,7 +184,7 @@
         <div class="price">
             <p>KSHs 300</p>
         </div>
-        <a href="#"><button id="button4" class="btn">add to cart</a>
+        <a href="#order"><button id="button4" class="btn">add to cart</a>
     </div>
     <div class="box">
       <img src="public/pizza99.jpeg"  id="img2" alt="">
@@ -175,7 +199,7 @@
         <div class="price">
             <p>KSHs 300</p>
         </div>
-        <a href="#"><button id="button4" class="btn">add to cart</a>
+        <a href="#order"><button id="button4" class="btn">add to cart</a>
     </div>
   </div>
 </section>
