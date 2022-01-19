@@ -11,22 +11,22 @@ $(document).ready(function() {
       return parseInt(pizzaCrust);
     }
     function topping() {
-      let pizzaTopping = document.getElementById("toppings").value;
-      return parseInt(pizzaTopping);
+      let pizzaToppings = document.getElementById("toppings").value;
+      return parseInt(pizzaToppings);
     }
     function number() {
-      let pizzaNumber = document.getElementById("quantity").value;
-      return parseInt(pizzaNumber);
+      let pizzaQuantity = document.getElementById("quantity").value;
+      return parseInt(pizzaQuantity);
     }
 
-    function Order(size, crust, topping, quantity) {
+    function orderedPizza(size, crust, topping, quantity) {
       this.newSize = size;
       this.newCrust = crust;
       this.newTopping = topping;
       this.newQuantity = quantity;
     }
 
-    let userInput = new Order(size(), crust(), topping(), number());
+    let userInput = new orderedPizza(size(), crust(), topping(), number());
 
     let totalCost = userInput.newSize + userInput.newCrust + userInput.newTopping *  userInput.newQuantity;
 
